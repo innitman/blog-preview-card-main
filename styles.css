@@ -57,6 +57,7 @@ body {
   gap: var(--spacing-200);
   place-self: center;
   width: var(--card-width);
+  min-width: min-content;
   padding: var(--spacing-200);
   background-color: white;
   border: 1px solid var(--color-gray-950, #111);
