@@ -95,9 +95,9 @@ body {
     & .published {
       font-size: var(--text-preset-3);
 
-      @media (max-width: 500px) {
+      @container card (max-width: 350px) {
         & {
-          font-size: 12px;
+          font-size: clamp(0.75rem, 4cqw, 0.875rem);
         }
       }
     }
@@ -106,9 +106,9 @@ body {
       font-size: var(--text-preset-1);
       font-weight: 800;
 
-      @media (max-width: 500px) {
+      @container card (max-width: 350px) {
         & {
-          font-size: 20px;
+          font-size: clamp(1.25rem, 6cqw, var(--text-preset-1));
         }
       }
     }
@@ -125,9 +125,9 @@ body {
       font-size: var(--text-preset-3);
       color: var(--grey-500);
 
-      @media (max-width: 500px) {
+      @container card (max-width: 350px) {
         & {
-          font-size: 14px;
+          font-size: clamp(0.875rem, 5cqw, var(--text-preset-3));
         }
       }
     }
