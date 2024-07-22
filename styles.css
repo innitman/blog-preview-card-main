@@ -114,7 +114,7 @@ body {
     }
 
     & .title:hover {
-      @media (min-width: 500px) {
+      @container card (max-width: 350px) {
         & {
           color: var(--yellow);
         }
