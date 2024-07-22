@@ -71,6 +71,7 @@ body {
   }
 
   & .card-content {
+    container: card / inline-size;
     display: flex;
     flex-direction: column;
     gap: var(--spacing-150);
@@ -84,9 +85,9 @@ body {
       padding-inline: var(--spacing-150);
       border-radius: 4px;
 
-      @media (max-width: 500px) {
+      @container card (max-width: 350px) {
         & {
-          font-size: 12px;
+          font-size: clamp(0.75rem, 4cqw, 0.875rem);
         }
       }
     }
